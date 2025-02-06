@@ -1,13 +1,11 @@
 # Workshop - Memory
 
 👋 
-##Innehåll denna workshop:
+## Diskutera
 
-
-* Hantera events i React
-* Hantera local state med useState()
-* Hantera sideeffects med useEffects()
-* Frivilligt: Använda Tailwind CSS [https://tailwindcss.com/](https://tailwindcss.com/)
+* Hur hanterar man events i React
+* Vad är state i React? Hur använder man useState()
+* Vad är side-effects? Hur fungerar useEffect? Vad är är skillnaden [], [variabel] som dependency-array?
 
 ## Din uppgift
 
@@ -26,12 +24,14 @@ Du ska skapa ett interaktivt memoryspel.
 * Hur hanterar du state när användaren klickar ett kort?
 * Hur kan du hålla reda på om användaren har klickat två kort?
    - Vad gör du om det två korten är lika?
- - Eller olika?
-
-**Obs!** Kom ihåg att du kan använda useEffects dependencyarrayen för att hålla reda på 
+   - Eller olika?
+* Du måste lösa uppgiften med att använda useState()
+* Du kan lösa uppgiften även med useEffect där dependencyarrayen håller reda på 
   om någon state eller variabel ändras.
 
 ```
+
+const [value, setValue] = useState("initilal value")
 
 useEffect(
   () => {
@@ -39,18 +39,14 @@ useEffect(
   }
 , [change1, change2])
 
-
 ```
 
 ## Extra
 
-Installera senaste Tailwind 4 (Vite installation) 
-[https://tailwindcss.com/docs/installation/using-vite](https://tailwindcss.com/docs/installation/using-vite)
-
-Installera extensions som Tailwind Intellisense och Tailwind Unfold.
-
-Avnänd AI för att omvandla vanliga CSS-regler till Tailwinds klasser. Exempelvis Github co-pilot eller annat valfritt verktyg.
-
+* Generera X antal kort i spelet
+* Animation när man vänder kort
+* Maxtid
+  
 
 Lycka till!
 // Sandra 🤩
